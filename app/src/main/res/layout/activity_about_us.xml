@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUs">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_aboutus"
+            app:title="@string/app_name"
+            app:titleTextColor="@color/colorPrimaryDark"
+            android:background="@color/colorAccent"
+            app:menu="@menu/search_menu"
+
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+        <TextView
+            android:id="@+id/aboutus_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+
+            android:gravity="center_horizontal"
+            android:text="PLASMA HELP"
+            android:background="@drawable/button_bg"
+            android:textSize="46sp"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif-black" />
+
+        <ImageView
+            android:layout_width="380dp"
+            android:layout_height="600dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/about" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:text="@string/aboutUs_desc"
+            android:textAlignment="center"
+
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+
+            android:text="Kindly  Rate  this  App!"
+
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+        <RatingBar
+            android:id="@+id/RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stepSize="1"
+            android:layout_marginTop="10dp"
+
+            android:theme="@style/Widget.AppCompat.RatingBar"
+            android:progressBackgroundTint="@android:color/black"
+            android:progressTint="@android:color/holo_red_dark"
+            android:layout_gravity="center_horizontal"
+            android:numStars="5"/>
+
+        <Button
+            android:id="@+id/button_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit Rating"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:onClick="rbtn_click"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_bg"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+
+            android:text="Follow Us on Social Media:"
+            android:textColor="@color/colorPrimaryText"
+            android:textStyle="bold|italic" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <Button
+                android:id="@+id/fb"
+
+                android:layout_margin="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="fb_click"
+                android:background="@drawable/background2"
+                android:text="Facebook" />
+            <Button
+                android:id="@+id/twitter"
+                android:layout_margin="8dp"
+                android:onClick="twitter_click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background2"
+                android:text="Twitter" />
+            <Button
+                android:id="@+id/insta"
+                android:layout_margin="8dp"
+                android:onClick="insta_click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background2"
+                android:text="Instagram" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

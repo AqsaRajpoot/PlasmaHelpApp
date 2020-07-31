@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDivider"
+    tools:context=".SearchActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/background"
+        android:layout_height="match_parent">
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_bg"
+            android:text="Search By City and Blood Group"
+            android:textAlignment="center"
+            android:padding="15dp"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+
+            android:background="@drawable/button_bg"
+            android:text="    Enter Your City    "
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+
+
+        <EditText
+            android:id="@+id/search_city"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="50dp"
+            android:ems="10"
+            android:hint="Enter City"
+            android:inputType="textPersonName" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            android:background="@drawable/button_bg"
+            android:text="  Enter BloodGroup  "
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+
+        <EditText
+            android:id="@+id/search_bloodgroup"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="30dp"
+            android:ems="10"
+            android:hint="Enter Blood Group"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/l_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_bg"
+            android:onClick="search"
+            android:text="Search" />
+    </LinearLayout>
+
+</ScrollView>

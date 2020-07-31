@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+
+    android:layout_height="match_parent"
+    tools:context=".SearchResults">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_search"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/colorPrimaryDark"
+        android:background="@color/colorAccent"
+        app:menu="@menu/search_menu"
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <TextView
+        android:id="@+id/result_heading"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:background="@drawable/button_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/search_result"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+
+        android:background="@drawable/background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>
